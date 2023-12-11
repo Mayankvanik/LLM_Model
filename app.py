@@ -5,14 +5,14 @@ from langchain.agents.agent_toolkits import SQLDatabaseToolkit
 from langchain.llms import GooglePalm
 
 
-api_key = 'AIzaSyAgeKZthVRtjrFNan4NFOvQdS_tjPbcv3k'
+api_key = '##SyAgeKZthVRtjr##'
 llm1 = GooglePalm(google_api_key=api_key,temperature=0.2)
 
 def get_sql():
     db_user = "root"
-    db_password = "Mayankbiker44+"
+    db_password = "##44+"
     db_host = "localhost"
-    db_name = "north_america"
+    db_name = "#ca"
 
     db = SQLDatabase.from_uri(f"mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}")
     toolkit = SQLDatabaseToolkit(db=db, llm=llm1)
